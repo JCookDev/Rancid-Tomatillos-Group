@@ -5,26 +5,38 @@
   background-color: black;
 }
 
+.home-button {
+  margin: 10px;
+  color: greenyellow
+}
+
 .site-title {
   text-align: center;
   padding: 10px;
   color: greenyellow;
 }
 
-/* .App {
-  text-align: center;
-} */
+.card, img {
+  display: block;
+  align-items:center;
+  width: 40rem;
+  height: 40rem;
+}
 
 .movie-poster {
   width: 8rem;
   height: 10rem;
 }
 
-.movie-container {
+.movie-container, .all-movies-container, .card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  font-size: smaller; 
+  font-size: smaller;
   color: whitesmoke;
 }
+
+
