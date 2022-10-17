@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CardDetails = (props) => {
-  console.log(props)
   return (
     <div className='card'>
       <button className="home-button" onClick={props.handleChange}>Home</button>

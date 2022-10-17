@@ -30,7 +30,6 @@ class App extends React.Component {
 
   render() {
     const getMovies = this.state.movies.map((movie) => {
-      // console.log(movie)
       return <Movies key={movie.id} movie={movie} handleChange={this.handleChange} />
 
     })
@@ -48,17 +47,6 @@ export default App;
 
 
 
-
-// class Movies extends React.Component {
-//    render() {
-//     return (
-//       <div>
-//         <p>{this.props.movieee.title} <br/></p>
-//         <img src={this.props.movieee.poster_path}/>
-//       </div>
-//     );
-//   }
-// }
 
 
 

@@ -18,9 +18,11 @@
 
 .card, img {
   display: block;
-  align-items:center;
   width: 40rem;
   height: 40rem;
+  padding: 10px;
+  font-size: smaller;
+  color: whitesmoke;
 }
 
 .movie-poster {
@@ -28,7 +30,7 @@
   height: 10rem;
 }
 
-.movie-container, .all-movies-container, .card {
+.all-movies-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,5 +40,7 @@
   font-size: smaller;
   color: whitesmoke;
 }
+
+
 
 
