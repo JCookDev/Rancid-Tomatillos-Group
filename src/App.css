@@ -2,11 +2,16 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black;
+ /* background-color: black; */
+}
+
+body {
+   background-color: black;
 }
 
 .home-button {
   margin: 10px;
+  background-color: black;
   color: greenyellow
 }
 
@@ -16,27 +21,33 @@
   color: greenyellow;
 }
 
-.card, img {
+  .card, img {
   display: block;
-  align-items:center;
+  align-self: center;
   width: 40rem;
   height: 40rem;
+  /* padding: 10px; */
+  font-size: medium;
+  color: whitesmoke;
+  background-color: black;
 }
 
 .movie-poster {
-  width: 8rem;
-  height: 10rem;
+  width: 9rem;
+  height: 11rem;
 }
 
-.movie-container, .all-movies-container, .card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  font-size: smaller;
+.all-movies-container {
+  display: grid;
+  margin: 2rem;
+  justify-items: stretch;
+  padding: 0 3.0rem;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(4,calc(25% - .75 * 0.5rem - 0rem));
+  font-size: 0.8rem; 
   color: whitesmoke;
 }
+
+
 
 

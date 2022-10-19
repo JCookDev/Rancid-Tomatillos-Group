@@ -11,7 +11,6 @@ class App extends React.Component {
     this.state = { movies: [], selectedMovie: null, visible: true }
   }
 
-
   componentDidMount = () => {
     this.setState({ visible: true })
     fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
@@ -20,24 +19,21 @@ class App extends React.Component {
   }
 
   handleChange = (event) => {
-
     const findMovie = this.state.movies.find(movie => movie.id === parseInt(event.target.id))
 
     this.setState({ selectedMovie: findMovie, visible: !this.state.visible })
   }
 
 
-
   render() {
     const getMovies = this.state.movies.map((movie) => {
-      // console.log(movie)
       return <Movies key={movie.id} movie={movie} handleChange={this.handleChange} />
 
     })
     return (
       <div>
         <h1 className="site-title">Rancid Tomatillos</h1>
-        {this.state.visible ? <div className='all-movies-container'>{getMovies}</div> : <CardDetails movie={this.state.selectedMovie} handleChange={this.handleChange} />}
+        {this.state.visible ? <div className='all-movies-container'>{getMovies}</div> : <CardDetails movie={this.state.selectedMovie} handleChange={this.handleChange} />} 
       </div>
     )
   }
@@ -48,17 +44,6 @@ export default App;
 
 
 
-
-// class Movies extends React.Component {
-//    render() {
-//     return (
-//       <div>
-//         <p>{this.props.movieee.title} <br/></p>
-//         <img src={this.props.movieee.poster_path}/>
-//       </div>
-//     );
-//   }
-// }
 
 
 
